@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Request2</title>
+
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- Our Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.dataTables.min.css">
+	<link rel="stylesheet" href="css/responsive.bootstrap4.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+	<!-- Font Awesome JS -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+		integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+		crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+		integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+		crossorigin="anonymous"></script>
+</head>
+
+<body class="dashboard">
+	<div class="wrapper-dash">
+		<!-- Sidebar  -->
+		<nav id="sidebar" class="sidenav">
+			<div class="sidebar-header">
+				<img src="img/lendeba-.svg" class="img-responsive" width="180" />
+			</div>
+
+			<ul class="list-unstyled components">
+				<div class="row my-4">
+					<div class="col-md-2">
+						<img class=" avatar" src="img/woman_12.svg" alt="Profile Pic">
+					</div>
+
+					<div class="col-md-8">
+						<p class="text-dark font-12 acc_name px-md-3 py-0 my-0">Maria Gomez</p>
+						<p class="acc_mail pl-md-3 py-0 mb-md-0 text-grey"><small
+								class="align-top">Administrator</small></p>
+					</div>
+				</div>
+
+				<li class="">
+					<a href="#" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" /> Dashboard</a>
+				</li>
+
+				<li>
+					<a href="#" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" /> Loan</a>
+				</li>
+
+				<li>
+					<a href="#" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" /> Customers</a>
+				</li>
+
+				<li>
+					<a href="products.html" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" />
+						Products</a>
+				</li>
+
+				<li>
+					<a href="#" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" /> Requests</a>
+				</li>
+
+				<li>
+					<a href="#" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" /> Partners</a>
+				</li>
+				<li>
+					<a href="#" class="text-dark"><img class="mb-md-1" src="img/dashboard.svg" /> Categories</a>
+				</li>
+
+				<li>
+					<a href="#" class="text-dark active"><img class="mb-md-1" src="img/dashboard.svg" /> Invoices</a>
+				</li>
+
+			</ul>
+		</nav>
+
+		<!-- Page Content  -->
+		<div id="content" class="main2">
+
+			<nav class="navbar navbar-expand-lg navbar-transparent">
+				<div class="container-fluid">
+					<button type="button" id="sidebarCollapse" class="btn btn-info d-md-none d-sm-block">
+						<i class="fas fa-align-left"></i>
+						<span>Toggle Sidebar</span>
+					</button>
+					<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-align-justify"></i>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="nav navbar-nav ml-auto">
+
+							<li class="nav-item dropdown">
+
+								<a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="mmm">M</span>
+									holargrapher@gmail.com
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Another action</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Logout</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row mt-4">
+					<div class="col-md-2">
+						<span><a href="#"><img src="img/Grouparrow.svg" alt="aqq"></a></span>
+						<span class="owe__1">Back</span>
+					</div>
+					<div class="col-md-9 ml-5">
+						<div class="input-group-btn d-flex justify-content-end">
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false" style="background: #259DD9;color:white;">
+								Create New
+							</button>
+							<div class="dropdown-menu drop">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+								<div role="separator" class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Separated link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 shadow element-box-2">
+						<div>
+							<p class="mur__1">Devon Murphy Request</p>
+							<hr>
+							<p class="mur__2">CUSTOMER'S NAME</p>
+							<p class="mur__3">Devon Murphy</p>
+							<hr style="margin-top: -3%;">
+							<p class="mur__2">ITEMS</p>
+							<p class="mur__31">Tecno Phones </p>
+							<hr style="margin-top: -3%;">
+							<p class="mur__2">AMOUNT</p>
+							<p class="mur__32">50,000.00</p>
+							<hr style="margin-top: -3%;">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="d-flex flex-column">
+										<div class="row">
+											<div class="col-md-9">
+												<p class="mur__21">REFERENCE. N0:</p>
+											</div>
+											<div class="col-md-2">
+												<p class="mur__21">90280IJAG5776</p>
+											</div>
+										</div>
+										<div class="row" style="margin-top: -11%;">
+											<div class="col-md-9">
+												<p class="mur__21">DATE & TIME:</p>
+											</div>
+											<div class="col-md-2">
+												<p class="mur__21">2014</p>
+											</div>
+										</div>
+										<div class="row" style="margin-top: -11%;">
+											<div class="col-md-9">
+												<p class="mur__21">STATUS:</p>
+											</div>
+											<div class="col-md-2">
+												<p class="mur__21">Delivered</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5 mr-3">
+									<button type="button" class="btn"
+										style="border: 1px solid green; color: #4CB449;background: transparent;">Decline
+										Request</button>
+								</div>
+								<div class="col-md-5">
+									<button type="button" class="btn btn-primary">Accept Request</button>
+								</div>
+							</div>
+
+						</div>
+						<hr>
+						<div class="mt-4">
+							<p class="mur__4">Documents</p>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="d-flex flex-column">
+										<img src="img/excelxlsx.svg" alt="xlx" style="width: 90%;">
+										<p class="mur__5">June Statement <br>
+											(Unedited)</p>
+										<p class="mur__6">Download</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<img src="img/excelpdf.svg" alt="xlx" style="width: 90%;">
+									<p class="mur__5">June Statement <br>
+										(Unedited)</p>
+									<p class="mur__6">Download</p>
+								</div>
+								<div class="col-md-4">
+									<img src="img/excelpdf.svg" alt="xlx" style="width: 90%;">
+									<p class="mur__5">June Statement <br>
+										(Unedited)</p>
+									<p class="mur__6">Download</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 shadow element-box-3">
+						<div>
+							<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active colly" id="pills-home-tab" data-toggle="pill"
+										href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+										Trends
+									</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link colly" id="pills-profile-tab" data-toggle="pill"
+										href="#pills-profile" role="tab" aria-controls="pills-profile"
+										aria-selected="false">Transactions</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link colly" id="pills-contact-tab" data-toggle="pill"
+										href="#pills-contact" role="tab" aria-controls="pills-contact"
+										aria-selected="false">Search</a>
+								</li>
+							</ul>
+							<div class="tab-content mt-5" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="weck mr-4">
+													<div class="row">
+														<div class="col-md-5">
+															<div class="d-flex flex-column">
+																<p class="colly1">TOTAL INCOME</p>
+																<p class="colly2">N1,982,092</p>
+															</div>
+														</div>
+														<div class="col-md-1 wek">
+															<img src="img/nexterrow.svg" alt="next" class="mt-3 ml-5">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="weck mr-4">
+													<div class="row">
+														<div class="col-md-5">
+															<div class="d-flex flex-column">
+																<p class="colly1">TRANSACTION</p>
+																<p class="colly2">N1,082,092</p>
+															</div>
+														</div>
+														<div class="col-md-1">
+															<img src="img/nexterrow.svg" alt="next" class="mt-3 ml-5">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<img src="img/Group 4chart.svg" alt="chart" class="mt-4 mb-4"
+												style="width: 100%;">
+										</div>
+										<div>
+											<p class="colly3 mb-5">Summaries</p>
+											<p class="colly4">No summaries available</p>
+											<p class="colly5">Lendaba needs at least Two Months of Transactions to <br>
+												Make Summaries.</p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-profile" role="tabpanel"
+									aria-labelledby="pills-profile-tab">
+									<table id="lendeba" class="table table-striped"
+										style="width:100%; border-left: 1px solid rgba(0,0,0,.1); border-bottom: 1px solid rgba(0,0,0,.1); border-right: 1px solid rgba(0,0,0,.1);">
+										<thead>
+											<tr>
+												<th class="small">Date</th>
+												<th class="small">Type</th>
+												<th class="small">Amount</th>
+												<th class="small">Remarks</th>
+
+											</tr>
+										</thead>
+										<tbody>
+
+											<tr style="background: #F5FAFD;">
+												<td>Mar 3, 2019</td>
+												<td>Debit</td>
+												<td>NGN 000.00</td>
+												<td>
+													Airtime Purchased <br> USSD - 101CCC000000T0009867532246000001
+												</td>
+
+											</tr>
+											<tr>
+												<td>Mar 3, 2019</td>
+												<td>Credit</td>
+												<td>NGN 000.00</td>
+												<td>
+													Airtime Purchased <br> USSD - 101CCC000000T0009867532246000001
+												</td>
+
+											</tr>
+											<tr style="background: #F5FAFD;">
+												<td>Mar 4, 2019</td>
+												<td>Credit</td>
+												<td>NGN 000.00</td>
+												<td>
+													Airtime Purchased <br> USSD - 101CCC000000T0009867532246000001
+												</td>
+
+											</tr>
+											<tr>
+												<td>Mar 3, 2019</td>
+												<td>Debit</td>
+												<td>NGN 000.00</td>
+												<td>
+													Airtime Purchased <br> USSD - 101CCC000000T0009867532246000001
+												</td>
+
+											</tr>
+											<tr style="background: #F5FAFD;">
+												<td>Mar 3, 2019</td>
+												<td>Credit</td>
+												<td>NGN 000.00</td>
+												<td>
+													Airtime Purchased <br> USSD - 101CCC000000T0009867532246000001
+												</td>
+
+											</tr>
+											<tr>
+												<td>Mar 4, 2019</td>
+												<td>Credit</td>
+												<td>NGN 000.00</td>
+												<td>
+													Airtime Purchased <br> USSD - 101CCC000000T0009867532246000001
+												</td>
+
+											</tr>
+
+
+										</tbody>
+
+									</table>
+
+								</div>
+								<div class="tab-pane fade" id="pills-contact" role="tabpanel"
+									aria-labelledby="pills-contact-tab" id="employ">
+									<div class="row">
+										<div class="col-md-3">
+											<div class="mains">
+
+												<!-- Actual search box -->
+												<div class="form-group has-search">
+													<span class="fa fa-search form-control-feedback fa-lg"></span>
+													<input type="text" class="form-control"
+														placeholder="Start typing to search....">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="container">
+										
+										<p class="colly5 mt-5">No Search result at the moment.</p>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery CDN - Slim version (=without AJAX) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<!-- Popper.JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+		integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+		crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+		integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+	<script src="js/dataTables.responsive.js"></script>
+	<script src="js/responsive.bootstrap4.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#sidebarCollapse').on('click', function () {
+				$('#sidebar').toggleClass('active');
+			});
+		});
+
+		function myClicked(a) {
+			document.getElementById(a).click();
+		}
+		// $(document).ready(function () {
+		// 	$('#lendeba').DataTable({
+		// 		responsive: true
+		// 	});
+		// });
+
+	</script>
+</body>
+
+</html>
