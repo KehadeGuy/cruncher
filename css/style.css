@@ -649,6 +649,15 @@ CONTENT STYLE
 	color: #4CB449;
 	
 }
+.mur__311{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17.6786px;
+	line-height: 31px;
+	
+	color: #0C587E;
+}
 .mur__32{
 	font-family: 'Poppins';
 	font-style: normal;
@@ -666,6 +675,15 @@ CONTENT STYLE
 	line-height: 19px;
 	/* identical to box height */
 	text-transform: uppercase;
+	
+	color: #525252;
+}
+.mur__211{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
 	
 	color: #525252;
 }
